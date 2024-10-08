@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="stylecatalogo.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav__img--container">
+            <img class="nav__logo" src="imagenes/logo.png" alt="imagen0">
+        </div>
+        <div class="nav__ul--container">
+            <ul class="nav__ul">
+                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="catalogo.html" class="nav__link">Nuestras Marcas</a></li>
+                <li class="nav__item"><a href="vender.html" class="nav__link">Vender</a></li>
+                <li class="nav__item"><a href="seguros.html" class="nav__link">Seguros</a></li>
+                <li class="nav__item"><a href="test.html" class="nav__link">Test Drive</a></li>
+                <li class="nav__item"><a href="contacto.html" class="nav__link">Contacto</a></li>
+                <li class="nav__item"><a href="login.html" class="nav__link link--login">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    </div>
+
+    <div class="container_tittle">
+        <h2 class="tittle1">Encuentra tu Vehículo ideal en DiamondCars</h2>
+        <p class="parrafo1">Descubre una amplia selección de autos nuevos y usados, desde deportivos hasta familiares. En DiamondCars, ofrecemos vehículos de calidad a precios competitivos, con opciones de financiamiento flexibles y un excelente servicio al cliente. Navega por nuestro inventario en línea, compara modelos y contáctanos para una prueba de manejo. Tu próximo automóvil te espera.</p>
+    </div>
+
+    <div class="search-bar-container">
+        <div class="search-bar">
+            <label for="categoria">Categoría</label>
+            <select id="categoria">
+                <option value="">Categoría</option>
+                <option value="autos">🚗 Autos</option>
+                <option value="camiones">🚚 Camioneta</option>
+            </select>
+
+            <label for="marca">Marca</label>
+            <select id="marca">
+                <option value="">Todas las marcas</option>
+                <option value="audi">Audi</option>
+                <option value="bmw">BMW</option>
+                <option value="ford">Ford</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="porsche">Porsche</option>
+            </select>
+
+            <input type="text" placeholder="Buscar vehículo..." />
+            <button type="button">Buscar</button>
+        </div>
+    </div>
+
+    <div class="car-list">
+        <h2 class="disponibles">Autos mas Vendidos</h2>
+        <div class="car-card">
+            <img src="imagenes/autos/audi/Audi A4 Modelo 2017/1AudiA4Modelo2017.webp" alt="Audi A4 Modelo 2017" class="car-card__image">
+            <div class="car-card__info">
+                <h3 class="car-card__title">Audi A4</h3>
+                <p class="car-card__details">Año: 2017</p>
+                <p class="car-card__details">Precio: $86.000.000,00</p>
+                <button class="car-card__button" onclick="window.location.href='mostrador.html'">Ver Detalles</button>
+            </div>
+        </div>
+        <div class="car-card">
+            <img src="imagenes/autos/bmw/BMW X3 xDrive30I Modelo 2020/1BMW X3 xDrive30I Modelo 2020.webp" alt="BMW X3 xDrive30I" class="car-card__image">
+            <div class="car-card__info">
+                <h3 class="car-card__title">BMW X3 xDrive30I </h3>
+                <p class="car-card__details">Año: 2020</p>
+                <p class="car-card__details">Precio: $170.000.000,00</p>
+                <button class="car-card__button" onclick="window.location.href='mostrador.html'">Ver Detalles</button>
+            </div>
+        </div>
+        <div class="car-card">
+            <img src="imagenes/autos/mercedes/Mercedes-Benz AMG A35 4MATIC Modelo 2023/1Mercedes-Benz AMG A35 4MATIC Modelo 2023.webp" alt="Mercedes-Benz AMG A35" class="car-card__image">
+            <div class="car-card__info">
+                <h3 class="car-card__title">Mercedes-Benz AMG A35</h3>
+                <p class="car-card__details">Año: 2023</p>
+                <p class="car-card__details">Precio: $200.000.000,00</p>
+                <button class="car-card__button" onclick="window.location.href='mostrador.html'">Ver Detalles</button>
+            </div>
+        </div>
+        <div class="car-card">
+            <img src="imagenes/autos/audi/Audi A4 Modelo 2017/1AudiA4Modelo2017.webp" alt="Audi A4 Modelo 2017" class="car-card__image">
+            <div class="car-card__info">
+                <h3 class="car-card__title">Audi A4</h3>
+                <p class="car-card__details">Año: 2017</p>
+                <p class="car-card__details">Precio: $86.000.000,00</p>
+                <button class="car-card__button" onclick="window.location.href='mostrador.html'">Ver Detalles</button>
+            </div>
+        </div>
+    </div>    
+
+    <div class="marcas-container">
+        
+            <h2 class="marcas-titulo">Marcas de Vehículos</h2>
+            <div class="marcas-grid">
+                <img src="imagenes/logos_autos/audi.png" alt="Audi" class="marca-logo">
+                <img src="imagenes/logos_autos/bmw.png" alt="BMW" class="marca-logo">
+                <img src="imagenes/logos_autos/ford.png" alt="Ford" class="marca-logo">
+                <img src="imagenes/logos_autos/mercedes.png" alt="Mercedes" class="marca-logo">
+                <img src="imagenes/logos_autos/porsche.png" alt="Porsche" class="marca-logo">
+                <img src="imagenes/logos_autos/toyota.png" alt="Toyota" class="marca-logo">
+            </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__links">
+                <a href="#privacy-policy" class="footer__link">Política de Privacidad</a>
+                <a href="#terms-of-service" class="footer__link">Términos de Servicio</a>
+                <a href="contacto.html" class="footer__link">Contacto</a>
+            </div>
+            <div class="footer__social-media">
+                <a href="https://www.facebook.com"" class="footer__social-link">Facebook</a>
+                <a href="https://www.twitter.com" class="footer__social-link">Twitter</a>
+                <a href="https://www.instagram.com" class="footer__social-link">Instagram</a>
+            </div>
+        </div>
+        <p class="footer__copyright">© 2024 DiamondCars. Todos los derechos reservados.</p>
+</footer>
+</body>
+</html>

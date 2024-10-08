@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="contacto.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav__img--container">
+            <img class="nav__logo" src="imagenes/logo.png" alt="imagen0">
+        </div>
+        <div class="nav__ul--container">
+            <ul class="nav__ul">
+                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="catalogo.html" class="nav__link">Nuestras Marcas</a></li>
+                <li class="nav__item"><a href="vender.html" class="nav__link">Vender</a></li>
+                <li class="nav__item"><a href="seguros.html" class="nav__link">Seguros</a></li>
+                <li class="nav__item"><a href="test.html" class="nav__link">Test Drive</a></li>
+                <li class="nav__item"><a href="contacto.html" class="nav__link">Contacto</a></li>
+                <li class="nav__item"><a href="login.html" class="nav__link link--login">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+   
+
+    <div class="container_tittle">
+        <h2 class="tittle1">Formulario de Contacto</h2>
+        <p class="parrafo1">¡Nos encantaría saber de ti! Si tienes alguna pregunta, comentario o inquietud, por favor completa el siguiente formulario y nos pondremos en contacto contigo lo antes posible.
+        </p>
+    </div>
+
+    <div class="contact-form-container">
+        <h2 class="contact-form-title">Formulario de Contacto</h2>
+        <form action="enviar.php" method="post" class="contact-form"> <!-- Cambia "enviar.php" al script que maneje el formulario -->
+            <label for="first_name" class="contact-form-label">Nombre (requerido):</label>
+            <input type="text" id="first_name" name="first_name" class="contact-form-input" placeholder="Ingresa tu nombre" required>
+    
+            <label for="last_name" class="contact-form-label">Apellido (requerido):</label>
+            <input type="text" id="last_name" name="last_name" class="contact-form-input" placeholder="Ingresa tu apellido" required>
+    
+            <label for="city" class="contact-form-label">Ciudad (requerido):</label>
+            <input type="text" id="city" name="city" class="contact-form-input" placeholder="Ingresa tu ciudad" required>
+    
+            <label for="phone" class="contact-form-label">Teléfono (requerido):</label>
+            <input type="tel" id="phone" name="phone" class="contact-form-input" placeholder="Ingresa tu número de teléfono" required>
+    
+            <label for="email" class="contact-form-label">Email (requerido):</label>
+            <input type="email" id="email" name="email" class="contact-form-input" placeholder="Ingresa tu correo electrónico" required>
+    
+            <label for="description" class="contact-form-label">Descripción (requerido):</label>
+            <textarea id="description" name="description" class="contact-form-textarea" rows="4" placeholder="Escribe tu mensaje aquí" required></textarea>
+    
+            <button type="submit" class="contact-form-button">Enviar</button>
+        </form>
+    </div>
+    <div class="data-processing-notice">
+        <p>
+            Al enviar este formulario, aceptas que tus datos personales serán tratados de acuerdo con nuestra 
+            <a href="politica-privacidad.html" target="_blank">política de privacidad</a>. 
+            Tus datos serán utilizados únicamente para responder a tu consulta y no serán compartidos con terceros sin tu consentimiento.
+        </p>
+    </div>
+
+    <div class="marcas-container">
+        
+        <h2 class="marcas-titulo">Marcas de Vehículos</h2>
+        <div class="marcas-grid">
+            <img src="imagenes/logos_autos/audi.png" alt="Audi" class="marca-logo">
+            <img src="imagenes/logos_autos/bmw.png" alt="BMW" class="marca-logo">
+            <img src="imagenes/logos_autos/ford.png" alt="Ford" class="marca-logo">
+            <img src="imagenes/logos_autos/mercedes.png" alt="Mercedes" class="marca-logo">
+            <img src="imagenes/logos_autos/porsche.png" alt="Porsche" class="marca-logo">
+            <img src="imagenes/logos_autos/toyota.png" alt="Toyota" class="marca-logo">
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__links">
+                <a href="#privacy-policy" class="footer__link">Política de Privacidad</a>
+                <a href="#terms-of-service" class="footer__link">Términos de Servicio</a>
+                <a href="contacto.html" class="footer__link">Contacto</a>
+            </div>
+            <div class="footer__social-media">
+                <a href="https://www.facebook.com"" class="footer__social-link">Facebook</a>
+                <a href="https://www.twitter.com" class="footer__social-link">Twitter</a>
+                <a href="https://www.instagram.com" class="footer__social-link">Instagram</a>
+            </div>
+        </div>
+        <p class="footer__copyright">© 2024 DiamondCars. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

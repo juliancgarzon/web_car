@@ -188,23 +188,25 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
     padding: 40px;
-    background-color: #ffffff;
+    background-color: #ffffff1c;
     min-height: 600px;
 }
 
 .container_texto {
+    font-family: sans-serif;
+    font-size: 20px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    color: #000000; 
+    color: #ffffff; 
 }
 
 .container_imagenes {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 10px;
     align-items: flex-start;
-    min-height: 500px;
+    min-height: 250px;
 }
 
 .container_imagenes img {
@@ -237,29 +239,6 @@ body {
     width: 100%; /* Ajustar el ancho del logo al contenedor */
     height: auto; /* Mantener la proporción de aspecto */
     object-fit: contain; /* Mantener la visibilidad del logo */
-}
-
-body {
-    margin: 0;
-    font-family: sans-serif;
-    box-sizing: border-box;
-    background-color: #000000;
-    color: #fff;
-    min-height: 100vh; /* Asegura que el body ocupe todo el alto de la ventana */
-    display: flex;
-    flex-direction: column; /* Apila los elementos en vertical */
-}
-
-/* Estilo para el footer */
-body {
-    margin: 0;
-    font-family: sans-serif;
-    box-sizing: border-box;
-    background-color: #000000;
-    color: #fff;
-    min-height: 100vh; /* Asegura que el body ocupe todo el alto de la ventana */
-    display: flex;
-    flex-direction: column; /* Apila los elementos en vertical */
 }
 
 /* Estilo para el footer */
