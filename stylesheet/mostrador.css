@@ -73,13 +73,41 @@ body {
 .link--login:hover {
     background-color: #414141aa;
 }
-
-
-/*--------- tittle and paragraph---------------*/
-.container_tittle{
-margin-bottom: 20px;
-    
+/*--------- carrusel---------------*/
+.carousel {
+    overflow: hidden;
+    position: relative;
 }
+
+.carousel__track {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    width: 100%;
+}
+
+.carousel__slide {
+    width: 100%;
+    flex: 1 0 100%;
+}
+
+.carousel__slide img {
+    width: 100%;
+    display: block;
+}
+
+
+@keyframes slide-animation {
+    0% { transform: translateX(0%); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0%); }
+}
+
+.carousel__track {
+    animation: slide-animation 20s infinite;
+}
+/*--------- tittle and paragraph---------------*/
+
 .tittle1{
     font-family: Arial, Helvetica, sans-serif;
     font-weight : 400; /* Normal */
@@ -145,178 +173,154 @@ margin-bottom: 20px;
 }
 /*--------- containers---------------*/
 
-
-
-.container_img{
-    background-color: #003366;
-    width: 500px;
-    height: 500px;
-    color: #c8102e;
-    justify-content: center;
-    margin: auto;
-}
-.container_public {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-    padding: 40px;
-    background-color: #ffffff;
-    min-height: 600px;
-}
-
-.container_texto {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    color: #000000; 
-}
-
-.container_imagenes {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    gap: 10px;
-    align-items: flex-start;
-    min-height: 500px;
-}
-
-.container_imagenes img {
-    width: 100%;
-    height: auto;
-    max-height: 300px;
-    object-fit: cover;
-    border-radius: 10px;
-}
 .marcas-container {
     padding: 40px;
-    background-color: #ffffff; 
-    text-align: center; 
+    background-color: #ffffff; /* Fondo blanco */
+    text-align: center; /* Centrar el texto del título */
     margin-top: auto;
 }
 
 .marcas-titulo {
-    font-size: 24px; 
-    margin-bottom: 20px; 
+    font-size: 24px; /* Tamaño del título */
+    margin-bottom: 20px; /* Espacio debajo del título */
     color: #000000;
 }
 
 .marcas-grid {
     display: grid;
-    grid-template-columns: repeat(6, 1fr); 
-    gap: 20px; 
+    grid-template-columns: repeat(6, 1fr); /* Seis columnas */
+    gap: 20px; /* Espacio entre logos */
 }
 
 .marca-logo {
-    width: 100%; 
-    height: auto; 
-    object-fit: contain; 
+    width: 100%; /* Ajustar el ancho del logo al contenedor */
+    height: auto; /* Mantener la proporción de aspecto */
+    object-fit: contain; /* Mantener la visibilidad del logo */
 }
-/*--------- footer---------------*/
+
+
+.disponibles{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight : 400; /* Normal */
+    font-size: 40px;
+    text-align: center;
+    margin: 100px;
+   
+}
+
+
+/* Estilo para el footer */
 .footer {
-    background-color: #003366; 
-    color: #ffffff; 
-    padding: 20px 0; 
-    text-align: center; 
-    width: 100%; 
-    margin-top: auto; 
+    background-color: #003366; /* Color de fondo */
+    color: #ffffff; /* Color del texto */
+    padding: 20px 0; /* Espaciado vertical */
+    text-align: center; /* Centra el texto */
+    width: 100%; /* Asegura que el footer ocupe todo el ancho */
+    margin-top: auto; /* Empuja el footer hacia abajo */
 }
 
 .footer__container {
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center; /* Centra los elementos horizontalmente */
 }
 
 .footer__links {
-    margin-bottom: 10px; 
+    margin-bottom: 10px; /* Espacio entre enlaces y redes sociales */
 }
 
 .footer__link {
-    color: #ffffff; 
-    text-decoration: none; 
-    margin: 0 15px; 
-    transition: color 0.3s; 
+    color: #ffffff; /* Color del enlace */
+    text-decoration: none; /* Sin subrayado */
+    margin: 0 15px; /* Espaciado horizontal entre enlaces */
+    transition: color 0.3s; /* Transición suave para el hover */
 }
 
 .footer__link:hover {
-    color: #c8102e; 
+    color: #c8102e; /* Color del enlace al pasar el mouse */
 }
 
 .footer__social-media {
-    margin-bottom: 10px; 
+    margin-bottom: 10px; /* Espacio entre redes sociales y copyright */
 }
 
 .footer__social-link {
-    color: #ffffff; 
-    text-decoration: none; 
-    margin: 0 10px; 
+    color: #ffffff; /* Color de los enlaces de redes sociales */
+    text-decoration: none; /* Sin subrayado */
+    margin: 0 10px; /* Espaciado horizontal entre enlaces de redes */
 }
 
 .footer__copyright {
-    margin-top: 10px; 
-    font-size: 14px; 
+    margin-top: 10px; /* Espacio en la parte superior del copyright */
+    font-size: 14px; /* Tamaño de la fuente */
 }
-/*--------- forms---------------*/
-.contact-form-container {
-    max-width: 600px;
-    margin: auto;
-    margin-bottom: 40px;
-    background: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.car-list {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    margin: 40px 0;
+    
 }
 
-.contact-form-title {
-    text-align: center;
-    color: #333;
+.car-list h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 
-.contact-form-label {
-    display: block;
-    margin: 10px 0 5px;
-}
-
-.contact-form-input, .contact-form-textarea {
-    width: 90%;
-    padding: 10px;
-    margin-bottom: 10px;
+.car-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border: 1px solid #ddd;
-    border-radius: 4px;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: 250px;
+    transition: transform 0.3s;
 }
 
-.contact-form-button {
-    background-color: #1863ad;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
+.car-card:hover {
+    transform: scale(1.05);
+}
+
+.car-card__image {
     width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
 
-.contact-form-button:hover {
+.car-card__info {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.car-card__title {
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+.car-card__details {
+    font-size: 1em;
+    color: #fffcfc;
+}
+
+.car-card__button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.car-card__button:hover {
     background-color: #003366;
 }
-.data-processing-notice {
-    margin-top: 20px;
-    font-size: 14px;
-    color: #fffefe;
-    text-align: center;
-}
-
-.data-processing-notice a {
-    color: #007bff;
-    text-decoration: underline;
-}
-
-.data-processing-notice a:hover {
-    text-decoration: none;
-}
-/*--------- catalogo---------------*/
-
+/* Contenedor principal */
 .page-container {
-    flex-direction: row; 
+    display: flex;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
@@ -326,8 +330,9 @@ margin-bottom: 20px;
 .filter-panel {
     width: 200px;
     background-color: #ccc;
-    padding: 20px 20px 100px 20px;
+    padding: 20px;
     margin-right: 20px;
+    margin-left: 40px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -352,13 +357,10 @@ margin-bottom: 20px;
 /* Galería de vehículos */
 .vehicle-gallery {
     display: flex;
-    width: 1000px;
     flex-wrap: wrap;
     gap: 20px;
     flex-grow: 1;
-    flex: 2; /* Ocupa el doble de espacio que el panel de filtro */
-    justify-content: space-between;
-    
+    justify-content: flex-start;
 }
 
 /* Tarjeta de vehículo */
@@ -370,8 +372,6 @@ margin-bottom: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
     text-align: center;
-    width: calc(25% - 20px); /* Ajusta el ancho para que quepan 4 por fila */
-    margin: 10px;
 }
 
 .vehicle-card:hover {
@@ -379,7 +379,7 @@ margin-bottom: 20px;
 }
 
 .vehicle-image img {
-    width: 100%;
+    width: 50%;
     height: auto;
 }
 
@@ -388,24 +388,36 @@ margin-bottom: 20px;
     margin: 10px 0;
     color: #333;
 }
-
-.page-container {
+.container {
     display: flex;
+    
 }
 
-.filter-panel {
-    flex: 1; /* Ocupa un espacio igual al contenido */
-    padding: 20px 20px 200px 20px;
-    background-color: #f0f0f0;
+.image-container {
+    flex: 1;
+    padding-right: 50px;
 }
 
-.vehicle-gallery {
-    flex: 2; /* Ocupa el doble de espacio que el panel de filtro */
+.vehicle-info {
+    flex: 1;
+    padding: 20px;
+}
+.main-image {
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 20px ;
+}
+
+.thumbnails {
     display: flex;
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan a una nueva línea */
-    justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
+    flex-wrap: wrap;
+    padding: auto;
+    
 }
 
-
-
-
+.thumbnail1,.thumbnail2,.thumbnail3 {
+    width: 200px;
+    height: 150px;
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
+    padding: 10px;
+}

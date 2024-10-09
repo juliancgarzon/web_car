@@ -53,7 +53,7 @@
         </div>
     </div>
 
-    <div class="page-container">
+    <div class="car-list">
         <aside class="filter-panel">
             <h3>Filtro</h3>
             <ul>
@@ -62,54 +62,36 @@
                 <li>Modelo</li>
             </ul>
         </aside>
-        <section class="vehicle-gallery">
-            <div class="vehicle-card">
-                <div class="vehicle-image">
-                    <img src="/imagenes/autos/audi/Audi A4 Modelo 2017/1Audi A4 Modelo 2017.webp" alt="Auto 1">
-                    <div class="car-card__info">
-                        <h3 class="car-card__title">Audi A4</h3>
-                        <p class="car-card__details">Año: 2017</p>
-                        <p class="car-card__details">Precio: $86.000.000,00</p>
-                        <button class="car-card__button" onclick="window.location.href='mostrador.html'">Ver Detalles</button>
-                    </div>
+        <div class="container">
+            <div class="image-container">
+                <img src="/imagenes/autos/audi/Audi A4 Modelo 2017/1Audi A4 Modelo 2017.webp" alt="Foto principal" class="main-image">
+                <div class="thumbnails">
+                    <img src="/imagenes/autos/audi/Audi A4 Modelo 2017/1Audi A4 Modelo 2017.webp" alt="Foto 2" class="thumbnail1">
+                    <img src="/imagenes/autos/audi/Audi A4 Modelo 2017/1Audi A4 Modelo 2017.webp" alt="Foto 3" class="thumbnail2">
+                    <img src="/imagenes/autos/audi/Audi A4 Modelo 2017/1Audi A4 Modelo 2017.webp" alt="Foto 4" class="thumbnail3">
                 </div>
-                <h4 class="vehicle-name">Automóvil 1</h4>
             </div>
-            <div class="vehicle-card">
-                <div class="vehicle-image">
-                    <img src="/imagenes/autos/audi/Audi Q3 S-line Black Edition Modelo 2018/1Audi Q3 S-line Black Edition Modelo 2018.webp" alt="Auto 2">
-                </div>
-                <h4 class="vehicle-name">Automóvil 2</h4>
+            <div class="vehicle-info">
+                <h2>Automóvil 1</h2>
+                <p>Información del vehículo: <br>
+                </p>
+                <button>Contactar a un asesor</button>
             </div>
-            <div class="vehicle-card">
-                <div class="vehicle-image">
-                    <img src="/imagenes/autos/audi/AUDI Q3 SportBack 35 TFSI Modelo 2022/1AUDI Q3 SportBack 35 TFSI Modelo 2022.webp" alt="Auto 3">
-                </div>
-                <h4 class="vehicle-name">Automóvil 3</h4>
-            </div>
-            <div class="vehicle-card">
-                <div class="vehicle-image">
-                    <img src="/imagenes/autos/bmw/BMW M235I Coupé Modelo 2016/1BMW M235I Coupé Modelo 2016.webp" alt="Auto 4">
-                </div>
-                <h4 class="vehicle-name">Automóvil 4</h4>
-            </div>
-            <!-- Agrega más vehículos según sea necesario -->
-        </section>
-    </div>
-    
-
+        </div>
+        <script src="/js/mostrador.js"></script>
+    </div>    
 
     <div class="marcas-container">
         
-        <h2 class="marcas-titulo">Marcas de Vehículos</h2>
-        <div class="marcas-grid">
-            <img src="/imagenes/logos_autos/audi.png" alt="Audi" class="marca-logo">
-            <img src="/imagenes/logos_autos/bmw.png" alt="BMW" class="marca-logo">
-            <img src="/imagenes/logos_autos/ford.png" alt="Ford" class="marca-logo">
-            <img src="/imagenes/logos_autos/mercedes.png" alt="Mercedes" class="marca-logo">
-            <img src="/imagenes/logos_autos/porsche.png" alt="Porsche" class="marca-logo">
-            <img src="/imagenes/logos_autos/toyota.png" alt="Toyota" class="marca-logo">
-        </div>
+            <h2 class="marcas-titulo">Marcas de Vehículos</h2>
+            <div class="marcas-grid">
+                <img src="/imagenes/logos_autos/audi.png" alt="Audi" class="marca-logo">
+                <img src="/imagenes/logos_autos/bmw.png" alt="BMW" class="marca-logo">
+                <img src="/imagenes/logos_autos/ford.png" alt="Ford" class="marca-logo">
+                <img src="/imagenes/logos_autos/mercedes.png" alt="Mercedes" class="marca-logo">
+                <img src="/imagenes/logos_autos/porsche.png" alt="Porsche" class="marca-logo">
+                <img src="/imagenes/logos_autos/toyota.png" alt="Toyota" class="marca-logo">
+            </div>
     </div>
 
     <footer class="footer">
@@ -126,6 +108,6 @@
             </div>
         </div>
         <p class="footer__copyright">© 2024 DiamondCars. Todos los derechos reservados.</p>
-    </footer>
+</footer>
 </body>
 </html>
