@@ -4,20 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
-    <link rel="stylesheet" href="stylecatalogo.css">
+    <link rel="stylesheet" href="/stylesheet/stylecatalogo.css">
 </head>
 <body>
     <nav class="nav">
         <div class="nav__img--container">
-            <img class="nav__logo" src="imagenes/logo.png" alt="imagen0">
+            <img class="nav__logo" src="/imagenes/logo.png" alt="imagen0">
         </div>
         <div class="nav__ul--container">
             <ul class="nav__ul">
                 <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
                 <li class="nav__item"><a href="catalogo.html" class="nav__link">Nuestras Marcas</a></li>
                 <li class="nav__item"><a href="vender.html" class="nav__link">Vender</a></li>
-                <li class="nav__item"><a href="seguros.html" class="nav__link">Seguros</a></li>
-                <li class="nav__item"><a href="test.html" class="nav__link">Test Drive</a></li>
                 <li class="nav__item"><a href="contacto.html" class="nav__link">Contacto</a></li>
                 <li class="nav__item"><a href="login.html" class="nav__link link--login">Login</a></li>
             </ul>
@@ -56,39 +54,63 @@
     </div>
 
     <div class="car-list">
-        <h2>Autos Disponibles</h2>
+        <aside class="filter-panel">
+            <h3>Filtro</h3>
+            <ul>
+                <li>Marca</li>
+                <li>Precio</li>
+                <li>Modelo</li>
+            </ul>
+        </aside>
         <div class="car-card">
-            <img src="imagenes/autos/auto1.jpg" alt="Auto Modelo 1" class="car-card__image">
+            <img src="/imagenes/autos/audi/Audi A4 Modelo 2017/1Audi A4 Modelo 2017.webp" alt="Audi A4 Modelo 2017" class="car-card__image">
             <div class="car-card__info">
                 <h3 class="car-card__title">Audi A4</h3>
-                <p class="car-card__details">Año: 2020</p>
-                <p class="car-card__details">Precio: $20,000</p>
-                <button class="car-card__button">Ver Detalles</button>
+                <p class="car-card__details">Año: 2017</p>
+                <p class="car-card__details">Precio: $86.000.000,00</p>
+                <button class="car-card__button" onclick="window.location.href='mostrador.html'">Ver Detalles</button>
             </div>
         </div>
         <div class="car-card">
-            <img src="imagenes/autos/auto2.jpg" alt="Auto Modelo 2" class="car-card__image">
+            <img src="/imagenes/autos/bmw/BMW X3 xDrive30I Modelo 2020/1BMW X3 xDrive30I Modelo 2020.webp" alt="BMW X3 xDrive30I" class="car-card__image">
             <div class="car-card__info">
-                <h3 class="car-card__title">BMW Serie 3</h3>
-                <p class="car-card__details">Año: 2019</p>
-                <p class="car-card__details">Precio: $18,000</p>
-                <button class="car-card__button">Ver Detalles</button>
+                <h3 class="car-card__title">BMW X3 xDrive30I </h3>
+                <p class="car-card__details">Año: 2020</p>
+                <p class="car-card__details">Precio: $170.000.000,00</p>
+                <button class="car-card__button" onclick="window.location.href='mostrador.html'">Ver Detalles</button>
             </div>
         </div>
-    
-        <!-- Repite este bloque para cada auto disponible -->
+        <div class="car-card">
+            <img src="/imagenes/autos/mercedes/Mercedes-Benz AMG A35 4MATIC Modelo 2023/1Mercedes-Benz AMG A35 4MATIC Modelo 2023.webp" alt="Mercedes-Benz AMG A35" class="car-card__image">
+            <div class="car-card__info">
+                <h3 class="car-card__title">Mercedes-Benz AMG A35</h3>
+                <p class="car-card__details">Año: 2023</p>
+                <p class="car-card__details">Precio: $200.000.000,00</p>
+                <button class="car-card__button" onclick="window.location.href='mostrador.html'">Ver Detalles</button>
+            </div>
+        </div>
+        <div class="car-card">
+            <img src="/imagenes/autos/audi/Audi A4 Modelo 2017/1Audi A4 Modelo 2017.webp" alt="Audi A4 Modelo 2017" class="car-card__image">
+            <div class="car-card__info">
+                <h3 class="car-card__title">Audi A4</h3>
+                <p class="car-card__details">Año: 2017</p>
+                <p class="car-card__details">Precio: $86.000.000,00</p>
+                <button class="car-card__button" onclick="window.location.href='mostrador.html'">Ver Detalles</button>
+            </div>
+        </div>
+    </div>    
 
     <div class="marcas-container">
         
-        <h2 class="marcas-titulo">Marcas de Vehículos</h2>
-        <div class="marcas-grid">
-            <img src="imagenes/logos_autos/audi.png" alt="Audi" class="marca-logo">
-            <img src="imagenes/logos_autos/bmw.png" alt="BMW" class="marca-logo">
-            <img src="imagenes/logos_autos/ford.png" alt="Ford" class="marca-logo">
-            <img src="imagenes/logos_autos/mercedes.png" alt="Mercedes" class="marca-logo">
-            <img src="imagenes/logos_autos/porsche.png" alt="Porsche" class="marca-logo">
-            <img src="imagenes/logos_autos/toyota.png" alt="Toyota" class="marca-logo">
-        </div>
+            <h2 class="marcas-titulo">Marcas de Vehículos</h2>
+            <div class="marcas-grid">
+                <img src="/imagenes/logos_autos/audi.png" alt="Audi" class="marca-logo">
+                <img src="/imagenes/logos_autos/bmw.png" alt="BMW" class="marca-logo">
+                <img src="/imagenes/logos_autos/ford.png" alt="Ford" class="marca-logo">
+                <img src="/imagenes/logos_autos/mercedes.png" alt="Mercedes" class="marca-logo">
+                <img src="/imagenes/logos_autos/porsche.png" alt="Porsche" class="marca-logo">
+                <img src="/imagenes/logos_autos/toyota.png" alt="Toyota" class="marca-logo">
+            </div>
     </div>
 
     <footer class="footer">
@@ -105,6 +127,6 @@
             </div>
         </div>
         <p class="footer__copyright">© 2024 DiamondCars. Todos los derechos reservados.</p>
-    </footer>
+</footer>
 </body>
 </html>

@@ -259,6 +259,7 @@ body {
     flex-direction:row;
     align-items: center;
     margin: 40px 0;
+    
 }
 
 .car-list h2 {
@@ -316,4 +317,74 @@ body {
 
 .car-card__button:hover {
     background-color: #003366;
+}
+/* Contenedor principal */
+.page-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Panel de filtros */
+.filter-panel {
+    width: 200px;
+    background-color: #ccc;
+    padding: 20px;
+    margin-right: 20px;
+    margin-left: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.filter-panel h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.filter-panel ul {
+    list-style: none;
+    padding: 0;
+}
+
+.filter-panel li {
+    font-size: 14px;
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Galería de vehículos */
+.vehicle-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-grow: 1;
+    justify-content: flex-start;
+}
+
+/* Tarjeta de vehículo */
+.vehicle-card {
+    width: 200px; /* Ajusta el tamaño según lo necesites */
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.vehicle-card:hover {
+    transform: translateY(-5px);
+}
+
+.vehicle-image img {
+    width: 100%;
+    height: auto;
+}
+
+.vehicle-name {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #333;
 }
