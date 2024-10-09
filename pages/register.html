@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="/stylesheet/register.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav__img--container">
+            <img class="nav__logo" src="/imagenes/logo.png" alt="imagen0">
+        </div>
+        <div class="nav__ul--container">
+            <ul class="nav__ul">
+                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="catalogo.html" class="nav__link">Nuestras Marcas</a></li>
+                <li class="nav__item"><a href="vender.html" class="nav__link">Vender</a></li>
+                <li class="nav__item"><a href="contacto.html" class="nav__link">Contacto</a></li>
+                <li class="nav__item"><a href="login.html" class="nav__link link--login">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+   
+
+    <div class="container_tittle">
+        <h2 class="tittle1">Formulario de Registro</h2>
+        <p class="parrafo1"> Por favor completa el siguiente formulario , ingresa al login , para poder visualizar nuestro catalogo 
+        </p>
+    </div>
+
+    <div class="contact-form-container">
+        <h2 class="contact-form-title">Formulario de Registro</h2>
+        <form action="registro.js" method="post" class="contact-form"> 
+            <label for="first_name" class="contact-form-label">Primer Nombre (requerido):</label>
+            <input type="text" id="first_name" name="first_name" class="contact-form-input" placeholder="Ingresa tu primer nombre" required>
+    
+            <label for="second_name" class="contact-form-label">Segundo Nombre:</label>
+            <input type="text" id="second_name" name="second_name" class="contact-form-input" placeholder="Ingresa tu segundo nombre">
+    
+            <label for="first_last_name" class="contact-form-label">Primer Apellido (requerido):</label>
+            <input type="text" id="first_last_name" name="first_last_name" class="contact-form-input" placeholder="Ingresa tu primer apellido" required>
+    
+            <label for="second_last_name" class="contact-form-label">Segundo Apellido:</label>
+            <input type="text" id="second_last_name" name="second_last_name" class="contact-form-input" placeholder="Ingresa tu segundo apellido">
+    
+            <label for="city" class="contact-form-label">Ciudad (requerido):</label>
+            <input type="text" id="city" name="city" class="contact-form-input" placeholder="Ingresa tu ciudad" required>
+
+            <label for="email" class="contact-form-label">Email (requerido):</label>
+            <input type="email" id="email" name="email" class="contact-form-input" placeholder="Ingresa tu correo electrónico" required>
+    
+            <label for="phone_mobile" class="contact-form-label">Teléfono Móvil (requerido):</label>
+            <input type="tel" id="phone_mobile" name="phone_mobile" class="contact-form-input" placeholder="Ingresa tu número de teléfono" required>
+    
+            <label for="username" class="contact-form-label">Nombre de Usuario (requerido):</label>
+            <input type="text" id="username" name="username" class="contact-form-input" placeholder="Ingresa tu nombre de usuario" required>
+    
+            <label for="password" class="contact-form-label">Contraseña (requerido):</label>
+            <input type="password" id="password" name="password" class="contact-form-input" placeholder="Ingresa tu contraseña" required>
+    
+    
+            <button type="submit" class="contact-form-button">Enviar</button>
+        </form>
+    </div>
+    <div class="data-processing-notice">
+        <p>
+            Al enviar este formulario, aceptas que tus datos personales serán tratados de acuerdo con nuestra 
+            <a href="politica-privacidad.html" target="_blank">política de privacidad</a>. 
+            Tus datos serán utilizados únicamente para responder a tu consulta y no serán compartidos con terceros sin tu consentimiento.
+        </p>
+    </div>
+
+    <div class="marcas-container">
+        
+        <h2 class="marcas-titulo">Marcas de Vehículos</h2>
+        <div class="marcas-grid">
+            <img src="/imagenes/logos_autos/audi.png" alt="Audi" class="marca-logo">
+            <img src="/imagenes/logos_autos/bmw.png" alt="BMW" class="marca-logo">
+            <img src="/imagenes/logos_autos/ford.png" alt="Ford" class="marca-logo">
+            <img src="/imagenes/logos_autos/mercedes.png" alt="Mercedes" class="marca-logo">
+            <img src="/imagenes/logos_autos/porsche.png" alt="Porsche" class="marca-logo">
+            <img src="/imagenes/logos_autos/toyota.png" alt="Toyota" class="marca-logo">
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__links">
+                <a href="#privacy-policy" class="footer__link">Política de Privacidad</a>
+                <a href="#terms-of-service" class="footer__link">Términos de Servicio</a>
+                <a href="contacto.html" class="footer__link">Contacto</a>
+            </div>
+            <div class="footer__social-media">
+                <a href="https://www.facebook.com"" class="footer__social-link">Facebook</a>
+                <a href="https://www.twitter.com" class="footer__social-link">Twitter</a>
+                <a href="https://www.instagram.com" class="footer__social-link">Instagram</a>
+            </div>
+        </div>
+        <p class="footer__copyright">© 2024 DiamondCars. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

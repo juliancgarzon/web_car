@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
-    <link rel="stylesheet" href="/stylesheet/style.css">
+    <link rel="stylesheet" href="/stylesheet/login.css">
 </head>
 <body>
     <nav class="nav">
@@ -22,63 +22,27 @@
         </div>
     </nav>
 
-    <div class="carousel">
-        <div class="carousel__track">
-            <div class="carousel__slide">
-                <img src="imagenes/carrusel/carrusel1.jpg" alt="Imagen 1">
-            </div>
-            <div class="carousel__slide">
-                <img src="imagenes/carrusel/carrusel2.jpg" alt="Imagen 2">
-            </div>
-            <div class="carousel__slide">
-                <img src="imagenes/carrusel/carrusel3.jpg" alt="Imagen 3">
-            </div>
-        </div>
-    </div>
-
     <div class="container_tittle">
         <h2 class="tittle1">Encuentra tu Vehículo ideal en DiamondCars</h2>
         <p class="parrafo1">Descubre una amplia selección de autos nuevos y usados, desde deportivos hasta familiares. En DiamondCars, ofrecemos vehículos de calidad a precios competitivos, con opciones de financiamiento flexibles y un excelente servicio al cliente. Navega por nuestro inventario en línea, compara modelos y contáctanos para una prueba de manejo. Tu próximo automóvil te espera.</p>
     </div>
 
-    <div class="search-bar-container">
-        <div class="search-bar">
-            <label for="categoria">Categoría</label>
-            <select id="categoria">
-                <option value="">Categoría</option>
-                <option value="autos">🚗 Autos</option>
-                <option value="camiones">🚚 Camioneta</option>
-            </select>
-
-            <label for="marca">Marca</label>
-            <select id="marca">
-                <option value="">Todas las marcas</option>
-                <option value="audi">Audi</option>
-                <option value="bmw">BMW</option>
-                <option value="ford">Ford</option>
-                <option value="mercedes">Mercedes</option>
-                <option value="porsche">Porsche</option>
-            </select>
-
-            <input type="text" placeholder="Buscar vehículo..." />
-            <button type="button">Buscar</button>
-        </div>
-    </div>
-
-    <div class="container_public">
-        <div class="container_texto">
-            <h2>¿Por qué elegirnos?</h2>
-            <p>En la actualidad, la compra de un vehículo de marca se ha convertido en una inversión significativa para muchas personas. La elección de un automóvil adecuado implica considerar diversos factores como la calidad, el rendimiento, el precio y las características del modelo. </p>
-            
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/ccqn7r9WUHI" style="border: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="YouTube video"></iframe>
-
-        </div>
-        <div class="container_imagenes">
-            <img src="/imagenes/publicidad/galeria189356.png" alt="Auto 1">
-            <img src="/imagenes/publicidad/evento.jpg" alt="Auto 2">
-            <img src="/imagenes/publicidad/seguros.webp" alt="Auto 3">
-            <img src="/imagenes/publicidad/trafico.jpeg" alt="Auto 4">
-        </div>
+    <div class="login-container">
+        <h2 class="tittle-login">Iniciar Sesión</h2>
+        <form class="login-form" action="login.js" method="POST">
+            <div class="form-group">
+                <label for="username">Nombre de Usuario:</label>
+                <input type="text" id="username" name="username" required placeholder="Ingresa tu nombre de usuario">
+            </div>
+            <div class="form-group">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required placeholder="Ingresa tu contraseña">
+            </div>
+            <button type="submit" class="login-button">Iniciar Sesión</button>
+            <p class="register-link">
+                ¿No tienes cuenta? <a href="register.html">Regístrate aquí</a>
+            </p>
+        </form>
     </div>
 
     <div class="marcas-container">

@@ -37,6 +37,30 @@
             <h2>Formulario de Venta de Vehículos</h2>
             
             <fieldset>
+                <legend>Información del Comprador</legend>
+        
+                <label for="buyer-name">Nombre:</label>
+                <input type="text" id="buyer-name" name="buyer-name" required>
+        
+                <label for="buyer-surname">Apellido:</label>
+                <input type="text" id="buyer-surname" name="buyer-surname" required>
+        
+                <label for="buyer-phone">Teléfono:</label>
+                <input type="tel" id="buyer-phone" name="buyer-phone" required>
+        
+                <label for="buyer-email">Correo electrónico:</label>
+                <input type="email" id="buyer-email" name="buyer-email" required>
+        
+                <label for="buyer-address">Dirección:</label>
+                <input type="text" id="buyer-address" name="buyer-address" required>
+        
+                <label for="id-type">Tipo de identificación:</label>
+                <input type="text" id="id-type" name="id-type" required>
+        
+                <label for="id-number">Número de identificación:</label>
+                <input type="text" id="id-number" name="id-number" required>
+            </fieldset>
+            <fieldset>
                 <legend>Información del Vehículo</legend>
                 
                 <label for="brand">Marca:</label>
@@ -67,37 +91,11 @@
                 <label for="color">Color:</label>
                 <input type="text" id="color" name="color" required>
         
-                <label for="vin">Número VIN:</label>
-                <input type="text" id="vin" name="vin" required>
-        
                 <label for="description">Descripción:</label>
                 <textarea id="description" name="description" rows="4" required></textarea>
             </fieldset>
         
-            <fieldset>
-                <legend>Información del Comprador</legend>
-        
-                <label for="buyer-name">Nombre:</label>
-                <input type="text" id="buyer-name" name="buyer-name" required>
-        
-                <label for="buyer-surname">Apellido:</label>
-                <input type="text" id="buyer-surname" name="buyer-surname" required>
-        
-                <label for="buyer-phone">Teléfono:</label>
-                <input type="tel" id="buyer-phone" name="buyer-phone" required>
-        
-                <label for="buyer-email">Correo electrónico:</label>
-                <input type="email" id="buyer-email" name="buyer-email" required>
-        
-                <label for="buyer-address">Dirección:</label>
-                <input type="text" id="buyer-address" name="buyer-address" required>
-        
-                <label for="id-type">Tipo de identificación:</label>
-                <input type="text" id="id-type" name="id-type" required>
-        
-                <label for="id-number">Número de identificación:</label>
-                <input type="text" id="id-number" name="id-number" required>
-            </fieldset>
+            
         
             <button type="submit">Enviar</button>
         </form>

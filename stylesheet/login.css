@@ -1,0 +1,346 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background-color: #000000;
+    color: #fff;
+}
+/*--------- nav ---------------*/
+.nav {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;;
+    position:static;
+    top: 0px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 200px #c8102e;
+}
+
+.nav__logo {
+    width: 150px;
+}
+
+.nav__ul {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+}
+
+.nav__ul--container {
+    text-align: center;
+    flex-grow: 4;
+}
+
+.nav__img--container {
+    text-align: center;
+    flex-grow: 1;
+
+}
+
+
+.nav__item {
+    list-style: none;
+    padding-top: 10px;
+}
+
+.nav__link {
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+    padding: 10px;
+    margin: 12px;
+    border-radius: 20px;
+    transition: background-color 0.3s, border-radius 0.2s;
+}
+
+.nav__link:hover {
+    background-color: #003366;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.link--login {
+    background-color: #003366;
+    color: #fff;
+    border-radius: 20px;
+    padding: 10px 24px;
+    margin-left: 150px;
+}
+
+.link--login:hover {
+    background-color: #414141aa;
+}
+/*--------- carrusel---------------*/
+.carousel {
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel__track {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    width: 100%;
+}
+
+.carousel__slide {
+    width: 100%;
+    flex: 1 0 100%;
+}
+
+.carousel__slide img {
+    width: 100%;
+    display: block;
+}
+
+
+@keyframes slide-animation {
+    0% { transform: translateX(0%); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0%); }
+}
+
+.carousel__track {
+    animation: slide-animation 20s infinite;
+}
+/*--------- tittle and paragraph---------------*/
+
+.tittle1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight : 400; /* Normal */
+    font-size: 40px;
+    text-align: center;
+}
+.parrafo1 {
+    width: 1000px; 
+    margin:auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100; /* Normal */
+    font-size: 17px;
+    text-align: center;
+}
+/*--------- search bar---------------*/
+
+.search-bar-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #c8102e; 
+    padding: 15px;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #fff; /* Fondo blanco */
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.search-bar select,
+.search-bar input,
+.search-bar button {
+    border: none;
+    outline: none;
+    padding: 15px;
+    font-size: 16px;
+    background: none;
+}
+
+.search-bar select {
+    flex: 1;
+    border-right: 1px solid #ddd;
+}
+
+.search-bar button {
+    background-color: #003366; 
+    color: #fff;
+    padding: 15px 30px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #000;
+}
+.search-bar input::placeholder {
+    color: #ccc; 
+}
+/*--------- containers---------------*/
+
+
+
+.container_img{
+    background-color: #003366;
+    width: 500px;
+    height: 500px;
+    color: #c8102e;
+    justify-content: center;
+    margin: auto;
+}
+.container_public {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    padding: 40px;
+    background-color: #ffffff1c;
+    min-height: 600px;
+}
+
+.container_texto {
+    font-family: sans-serif;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: #ffffff; 
+}
+
+.container_imagenes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+    align-items: flex-start;
+    min-height: 250px;
+}
+
+.container_imagenes img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.marcas-container {
+    padding: 40px;
+    background-color: #ffffff; /* Fondo blanco */
+    text-align: center; /* Centrar el texto del título */
+    margin-top: auto;
+}
+
+.marcas-titulo {
+    font-size: 24px; /* Tamaño del título */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    color: #000000;
+}
+
+.marcas-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* Seis columnas */
+    gap: 20px; /* Espacio entre logos */
+}
+
+.marca-logo {
+    width: 100%; /* Ajustar el ancho del logo al contenedor */
+    height: auto; /* Mantener la proporción de aspecto */
+    object-fit: contain; /* Mantener la visibilidad del logo */
+}
+
+/* Estilo para el footer */
+.footer {
+    background-color: #003366; /* Color de fondo */
+    color: #ffffff; /* Color del texto */
+    padding: 20px 0; /* Espaciado vertical */
+    text-align: center; /* Centra el texto */
+    width: 100%; /* Asegura que el footer ocupe todo el ancho */
+    margin-top: auto; /* Empuja el footer hacia abajo */
+}
+
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+
+.footer__links {
+    margin-bottom: 10px; /* Espacio entre enlaces y redes sociales */
+}
+
+.footer__link {
+    color: #ffffff; /* Color del enlace */
+    text-decoration: none; /* Sin subrayado */
+    margin: 0 15px; /* Espaciado horizontal entre enlaces */
+    transition: color 0.3s; /* Transición suave para el hover */
+}
+
+.footer__link:hover {
+    color: #c8102e; /* Color del enlace al pasar el mouse */
+}
+
+.footer__social-media {
+    margin-bottom: 10px; /* Espacio entre redes sociales y copyright */
+}
+
+.footer__social-link {
+    color: #ffffff; /* Color de los enlaces de redes sociales */
+    text-decoration: none; /* Sin subrayado */
+    margin: 0 10px; /* Espaciado horizontal entre enlaces de redes */
+}
+
+.footer__copyright {
+    margin-top: 10px; /* Espacio en la parte superior del copyright */
+    font-size: 14px; /* Tamaño de la fuente */
+}
+
+.login-container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 60px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 10px;
+}
+.tittle-login{
+    color: #000;
+}
+p{
+    color: #000;
+}
