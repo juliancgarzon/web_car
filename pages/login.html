@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <title>Login</title>
     <link rel="stylesheet" href="/stylesheet/login.css">
+    <script src="../js/login.js"></script>
 </head>
 <body>
     <nav class="nav">
@@ -26,25 +27,28 @@
         <h2 class="tittle1">Encuentra tu Vehículo ideal en DiamondCars</h2>
         <p class="parrafo1">Descubre una amplia selección de autos nuevos y usados, desde deportivos hasta familiares. En DiamondCars, ofrecemos vehículos de calidad a precios competitivos, con opciones de financiamiento flexibles y un excelente servicio al cliente. Navega por nuestro inventario en línea, compara modelos y contáctanos para una prueba de manejo. Tu próximo automóvil te espera.</p>
     </div>
-
-    <div class="login-container">
-        <h2 class="tittle-login">Iniciar Sesión</h2>
-        <form class="login-form" action="login.js" method="POST">
-            <div class="form-group">
-                <label for="username">Nombre de Usuario:</label>
-                <input type="text" id="username" name="username" required placeholder="Ingresa tu nombre de usuario">
-            </div>
-            <div class="form-group">
-                <label for="password">Contraseña:</label>
-                <input type="password" id="password" name="password" required placeholder="Ingresa tu contraseña">
-            </div>
-            <button type="submit" class="login-button">Iniciar Sesión</button>
-            <p class="register-link">
-                ¿No tienes cuenta? <a href="register.html">Regístrate aquí</a>
-            </p>
-        </form>
-    </div>
-
+    
+    <section id="login">
+        <div class="login-container">
+            <h2 class="tittle-login">Iniciar Sesión</h2>
+            <form id="loginForm" class="login-form"  >
+                <div class="form-group">
+                    <label for="username">Nombre de Usuario:</label>
+                    <input type="text" id="username" name="username" required placeholder="Ingresa tu nombre de usuario">
+                </div>
+                <div class="form-group">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" required placeholder="Ingresa tu contraseña">
+                </div>
+                <button type="submit" class="login-button">Iniciar Sesión</button>
+                <p class="register-link">
+                    ¿No tienes cuenta? <a href="register.html">Regístrate aquí</a>
+                </p>
+            </form>
+            <p id="loginMessage"></p>
+        </div>
+    </section>
+    
     <div class="marcas-container">
         
         <h2 class="marcas-titulo">Marcas de Vehículos</h2>

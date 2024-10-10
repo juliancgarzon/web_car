@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <title>Contacto</title>
     <link rel="stylesheet" href="/stylesheet/contacto.css">
+    <script src="../js/contacto.js"></script>
 </head>
 <body>
     <nav class="nav">
@@ -22,7 +23,6 @@
         </div>
     </nav>
 
-   
 
     <div class="container_tittle">
         <h2 class="tittle1">Formulario de Contacto</h2>
@@ -32,7 +32,7 @@
 
     <div class="contact-form-container">
         <h2 class="contact-form-title">Formulario de Contacto</h2>
-        <form action="enviar.php" method="post" class="contact-form"> <!-- Cambia "enviar.php" al script que maneje el formulario -->
+        <form id="contactForm" method="post" class="contact-form"> 
             <label for="first_name" class="contact-form-label">Nombre (requerido):</label>
             <input type="text" id="first_name" name="first_name" class="contact-form-input" placeholder="Ingresa tu nombre" required>
     
