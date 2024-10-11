@@ -1,25 +1,22 @@
 window.onload = (event) => {
-    const registerForm = document.getElementById('registerForm');
+    const contactForm = document.getElementById('contactForm');
     const apiUrl = 'https://diamond-be.vercel.app';
-    registerForm.addEventListener('submit', async function (event) {
+    contactForm.addEventListener('submit', async function (event) {
         event.preventDefault();
 
         const first_name = document.getElementById('first_name').value;
-        const second_name = document.getElementById('second_name').value;
-        const first_last_name = document.getElementById('first_last_name').value;
-        const second_last_name = document.getElementById('second_last_name').value;
+        const last_name = document.getElementById('last_name').value;
         const city = document.getElementById('city').value;
+        const phone = document.getElementById('phone').value;
         const email = document.getElementById('email').value;
-        const phone_mobile = document.getElementById('phone_mobile').value;
-        const user_name = document.getElementById('user_name').value;
-        const password = document.getElementById('password').value;
+        const description = document.getElementById('description').value;
 
         // Validación básica
-        if (!first_name || !second_name || !first_last_name || !second_last_name || !city || !phone_mobile || !email || !user_name || !password) {
+        if (!first_name || !last_name || !city || !phone || !email || !description) {
             alert('Por favor, completa todos los campos requeridos.');
             return;
         }
-        
+
         try {
             const response = await fetch(`${apiUrl}/createcontact`, {
                 method: 'POST',
@@ -28,17 +25,14 @@ window.onload = (event) => {
                 },
                 body: JSON.stringify({
                     first_name,
-                    second_name,
-                    first_last_name,
-                    second_last_name,
+                    last_name,
                     city,
-                    phone_mobile,
+                    phone,
                     email,
-                    user_name,
-                    password
+                    description
                 }),
             });
-        
+
             if (response.ok) {
                 alert('Mensaje enviado exitosamente.');
                 contactForm.reset(); // Limpiar el formulario después de enviar
