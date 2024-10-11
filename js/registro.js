@@ -41,7 +41,7 @@ window.onload = (event) => {
         
             if (response.ok) {
                 alert('Registro exitoso.');
-                contactForm.reset(); // Limpiar el formulario después de enviar
+                registerForm.reset(); // Limpiar el formulario después de enviar
             } else {
                 alert('Hubo un problema al enviar tu registo, Por favor, inténtalo nuevamente.');
             }
