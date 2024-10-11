@@ -1,8 +1,8 @@
 window.onload = (event) => {
     const loginForm = document.getElementById ('loginForm');
     const loginMessage = document.getElementById('loginMessage');
-
-    //const apiUrl = 'https://node-project-ql7a.vercel.app';
+    const apiUrl = 'https://diamond-be.vercel.app';
+    
 
     loginForm.addEventListener('submit', async function(event){
 
@@ -12,8 +12,7 @@ window.onload = (event) => {
         const password = document.getElementById('password').value;
 
         try {
-            //const response = await fetch(`${apiUrl}/api/login`, {
-            const response = await fetch(`http://localhost:3000/api/login`, {
+            const response = await fetch(`${apiUrl}/api/login`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
